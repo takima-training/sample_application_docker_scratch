@@ -1,0 +1,28 @@
+version: '2.4'
+services:
+  backend:
+    container_name: backend
+    image: tp-api
+    networks:
+      - network
+    depends_on:
+      - database
+
+  database:
+    container_name: database
+    image: tp-db
+    networks:
+      - network
+
+  httpd:
+    container_name: httpd
+    image: tp-http
+    ports:
+      - "80:80"
+    networks:
+      - network
+    depends_on:
+      - backend
+
+networks:
+  network:
