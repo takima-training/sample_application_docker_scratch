@@ -11,9 +11,9 @@ Pour commencer ajouter les fichiers à votre dépôt Git et faîte une nouvelle 
 qui va :
 
 1. Build chaque image et la push sur DockerHub (une étape par service)
-2. Utiliser Ansible pour :
-	- Installer Docker sur votre machine
-	- Installer docker-compose sur votre machine
+2. Utiliser Ansible pour faire les éléménts suivants depuis votre CI sur votre serveur :
+	- Installer Docker
+	- Installer docker-compose
 	- ouvrir le port spécifique (80)
 	- installer le dernier `docker-compose.yaml`
 	- relancer le docker-compose
