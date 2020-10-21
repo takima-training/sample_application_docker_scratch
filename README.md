@@ -2,7 +2,7 @@ Vous avez fait votre première connection à Travis et SonarCloud, bien joué !
 
 Nouvelle étape, vous avez différents services qui fonctionnent (httpd, simple-api, database).
 Essayer de les lancer sur votre machine via le `docker-compose.yml` présent.
-Tout doit fonctionner.
+Quelque chose se passe mal, que faut-il corriger ?
 
 L'idée va être de construire chaque image, de l'envoyer sur Docker Hub 
 puis de déployer les changements sur le serveur distance.
