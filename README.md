@@ -17,3 +17,9 @@ qui va :
 	- ouvrir le port spécifique (80)
 	- installer le dernier `docker-compose.yaml`
 	- relancer le docker-compose
+
+
+Votre travis.yml final doit contenir les étapes suivantes :
+1. lancer les tests de l'api
+2. build chaque image et les push sur DockerHub
+3. Déployer sur votre serveur avec Ansible
